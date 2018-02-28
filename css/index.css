@@ -1,0 +1,33 @@
+#header {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0F091F;
+}
+
+.hidden {
+  display: none;
+}
+
+.top-btn:hover {
+  background-color: green;
+}
+
+.page-footer {
+  background-color: #2C1A5B;
+}
+
+p {
+  color: #2C1A5B;
+}
+
+b {
+  color: #BF005F;
+}
+
+h4 b {
+  color: #2C1A5B;
+}
+
+h4 {
+  color: #2C1A5B;
+}

@@ -5,14 +5,235 @@
     <link href="https://fonts.googleapis.com/icon?family-Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <!--Import Materialize Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Custom CSS-->
+    <link type="text/css" rel="stylesheet" href="css/index.css"/>
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width. initial-scale=1.0"/>
+    <style>
+
+    </style>
   </head>
 
   <body>
+
+    <!-- Introduction to the portfolio highlighting name and field of interest -->
+    <div id="header" class="valign-wrapper">
+      <div class="row hidden">
+        <div class="col s8 offset-s2 m10 offset-m1 l12 center-align">
+          <p class="flow-text white-text">Hello, World!<br>My name is <span style="color:#BF005F;">Daniel Bogomazov</span>.<br>I'm a Software Developer specializing in <span style="color:#FE7335;">Swift</span>.</p>
+        </div>
+        <div class="col s12 center-align">
+          <button id="scroll-button" class="btn btn-flat white-text top-btn">>> View My Portfolio <<</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Break used as the point to scroll to when the "View Porfolio" button is pressed -->
+    <br id="scrollTo">
+
+    <!-- Body of the portfolio -->
+    <div class="container">
+
+      <br>
+
+      <div class="section">
+        <h4><b>About Me</b></h4>
+        <div class="row">
+          <div class="col s12 m4 l2 center-align">
+            <img class="circle z-depth-1" width="150px" height="150px" src="img/default_avatar.png">
+          </div>
+          <div class="col s12 m8 l9 offset-l1">
+            <p>I am currently a 4th year student at Seneca College working towards an <b>Honours Bachelor of Technology - Software Development</b> degree.
+              My hobbies include listening to and mixing music, watching movies, playing video games, snowboarding over the winter, and cooking from time to time.</p>
+            <p>Through my coop program, I worked at the <b>Ontario Ministry of Health and Long-term Care</b> as a front-end iOS application developer. Through my work terms, I was able to learn how to transfer what I've learned at school into real-world applications.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 center-align">
+            <a href="img/DanielBogomazovResume.pdf" target="_blank" class="waves-effect waves-light btn"><i class="material-icons right" download>arrow_forward</i>View Resume</a>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="divider"></div>
+      <div class="divider"></div>
+      <div class="divider"></div>
+
+      <br>
+
+      <div class="section">
+        <h4><b>My Skills</b></h4>
+        <br>
+
+        <!-- Technical Skills -->
+        <div class="row">
+          <div class="col s6 l3 offset-l3 center-align">
+            <img src="img/swift.png" class="responsive-img">
+          </div>
+          <div class="col s6 l3 center-align">
+            <img src="img/c++.png" class="responsive-img">
+          </div>
+        </div>
+      </div>
+
+        <!-- Transferable Skills -->
+        <div class="row">
+          <div class="col s12 l2">
+            <b>Independence</b>
+          </div>
+          <div class="col s10 l10">
+            <div class="progress">
+              <div class="determinate" style="width: 95%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 l2">
+            <b>Teamwork</b>
+          </div>
+          <div class="col s10 l10">
+            <div class="progress">
+              <div class="determinate" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 l2">
+            <b>Goal Oriented</b>
+          </div>
+          <div class="col s10 l10">
+            <div class="progress">
+              <div class="determinate" style="width: 100%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 l2">
+            <b>Micromanagement</b>
+          </div>
+          <div class="col s10 l10">
+            <div class="progress">
+              <div class="determinate" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 l2">
+            <b>Problem Solving</b>
+          </div>
+          <div class="col s10 l10">
+            <div class="progress">
+              <div class="determinate" style="width: 95%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 l2">
+            <b>Creativity</b>
+          </div>
+          <div class="col s10 l10">
+            <div class="progress">
+              <div class="determinate" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+
+      <br>
+
+      <div class="divider"></div>
+      <div class="divider"></div>
+      <div class="divider"></div>
+
+      <br>
+
+      <div class="section">
+        <h4><b>Projects</b></h4>
+
+        <h4 class="right-align">mass-Immunizations</h4>
+        <p>While working coop at the <b>Ontario Ministry of Health and Long-term Care</b>, I worked on an <b>iPad application</b> called mass-Immunizations. It was an application designed to be used by doctors and nurses for logging information on immunizations administered to their patients through the use of modern technologies. It was designed with <b>offline capabilities</b> in mind, leaving only the uploading and downloading of new information to be relient on a wifi connection. Its use comes in the encapsulation of immunization steps into a mobile device and for off-site immunizations such as a school immunization event. It was also designed for the situation of a pandemic event where a mass immunization process would be necessary.</p>
+        <p>mass-Immunizations was built using <b>Swift 3 and 4</b>. Through tools like <b>Jenkins, Jira, SVN, and GitHub</b>, I was able to work with my team to accomplish my tasks for update releases of the application. I used the <b>CocoaPods</b> dependency manager to work with 3rd party libraries to improve the quality and ease of use of the application.</p>
+
+        <br>
+
+        <div class="divider"></div>
+
+        <br>
+
+        <h4 class="right-align">PocketMoney</h4>
+        <p>PocketMoney is an iOS application I have been working on that would allow users to <b>track their spending habits</b>. It is built using all of the knowledge that I have gathererd throughout my time at college and during my coop work term at the Ministry of Health and Long-term Care.</p>
+        <p>It uses <b>CoreData</b> to store the model of the user's spendature information, including specific goals and items bought. It is still in production and will be released on the <b>Apple AppStore</b> upon completion. It is an <b>open source project</b> that you can find on my GitHub (linked in the footer).</p>
+
+        <br>
+
+        <div class="divider"></div>
+
+        <br>
+
+        <h4 class="right-align">Workforce++</h4>
+        <p>Workforce++ is a <b>multi-platform application</b> that I designed with 3 other group members. It is an application designed to make shift management easier and to create a <b>messaging service</b> for employees of a business using the product. Managers would be able to create and manage shifts through a web app. Employees are given accounts to sign into the iOS/Android versions which holds all of their schedule information, allows them to request time off, trade shifts, and email other employees. They would also be able to sign in and out for their shifts by scanning their phone with a <b>Raspberry Pi NFC reader</b>. </p>
+        <p>My role in the group was primarily as the <b>native iOS application developer</b>. My application would be able to <b>communicate with other iOS and Android devices</b> through the server. While in the background, the application would be able to recieve <b>push notifications</b> to notify the user of any shift updates or messages. We used GitHub for <b>centralization and for version control</b>.</p>
+      </div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <!-- Footer - shows copyright and link to LinkedIn, GitHub, and Email -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row center-align">
+          <div class="col s12">
+            <h3>Contact Me</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s4 m2 offset-m3 center-align">
+            <a href="https://github.com/danielbogomazov" target="_blank"><img src="img/github_logo_white.png"></a>
+          </div>
+          <div class="col s4 m2 center-align">
+            <a href="https://www.linkedin.com/in/daniel-bogomazov-0a4b17144/" target="_blank"><img src="img/ln_logo_white.png"></a>
+          </div>
+          <div class="col s4 m2 center-align">
+            <a href="mailto:danielbogomazov@gmail.com"><img src="img/email_white.png"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright right-align">
+        <div class="container">
+          Daniel Bogomazov © 2018
+        </div>
+      </div>
+    </footer>
+
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+      $(function() {
+        // Start from the top of the page when loaded
+        $(this).scrollTop(0);
+
+        // Fade in the top text when page is loaded
+        $('div.hidden').fadeIn(4000).removeClass('hidden');
+
+        // Scroll down past the top section when the "View Portfolio" button is clicked
+        $("#scroll-button").click(function() {
+          $('html, body').animate({
+            scrollTop: $("#scrollTo").offset().top
+          }, 1000);
+        });
+      });
+    </script>
+
   </body>
 </html>
